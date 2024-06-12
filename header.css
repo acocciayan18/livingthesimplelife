@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+  box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: rgb(245, 245, 245);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.header-div {
+  display: flex;
+  margin: 1% 2%;
+  width: 92%;
+  max-width: 950px;
+  padding: 1% 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-title {
+  font-size: clamp(1.7rem, 2.5vw, 2.6rem);
+  margin: 0;
+  font-weight: 600;
+  font-family: Lora, 'Times New Roman', Times, serif;
+  color: #143774;
+}
+
+.header-subtitle {
+  font-size: clamp(0.9rem, 1.2vw, 1.3rem);
+  margin: 0;
+  font-family: Ubuntu, Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  color: #1792d2;
+}
+
+ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation {
+  list-style: none;
+  margin-left: 30px;
+  font-size: clamp(0.8rem, 1.2vw, 1.2rem);
+  letter-spacing: 0.05rem;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  position: relative;
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #424242;
+  transition: width 0.3s ease;
+  margin-bottom: -2px;
+}
+
+.home-nav:hover::after,
+.about-nav:hover::after,
+.recent-nav:hover::after {
+  width: 100%;
+}
+
+.home-nav,
+.about-nav,
+.recent-nav {
+  font-family: Ubuntu, Arial, Helvetica, sans-serif;
+  color: #707070;
+  font-weight: 700;
+}
+
+.home-nav:active,
+.about-nav:active,
+.recent-nav:active {
+  color: #292929;
+}
+
+.home-nav.active,
+.about-nav.active,
+.recent-nav.active {
+  border-bottom: 2px solid;
+  pointer-events: none;
+  cursor: default;
+}

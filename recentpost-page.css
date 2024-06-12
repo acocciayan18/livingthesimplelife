@@ -1,0 +1,24 @@
+.submain-div {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.submain-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+.date-comment-info {
+  font-size: clamp(0.7rem, 1vw, 0.9rem);
+  color: #707070;
+}
+.aboutme-sidebar {
+  height: 27%;
+  background-color: rgb(236, 236, 236);
+  padding: 7%;
+  margin-bottom: 20%;
+}
+.submain-image-div{
+  min-width: 170px;
+  width: 25%;
+}

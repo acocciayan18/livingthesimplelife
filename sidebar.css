@@ -1,0 +1,59 @@
+/* Global Styles */
+a { text-decoration: none; }
+
+/* Sidebar Styles */
+.aside-div { width: 23%; }
+
+.aboutme-sidebar {
+  height: auto;
+  background-color: rgb(236, 236, 236);
+  padding: 6%;
+  margin-bottom: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.aboutme-sidebar div,
+.recent-sidebar div { background-color: white; padding: 9%; }
+
+.aboutme-sidebar img,
+.recent-sidebar img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+.aboutme-sidebar p,
+.recent-sidebar p {
+  font-size: clamp(1rem, 1vw, 1.3rem);
+  font-family: Ubuntu, Arial;
+  line-height: 1.2rem;
+  color: #143774;
+  margin-top: 6%;
+  margin-bottom: 0;
+}
+
+.recent-sidebar {
+  background-color: rgb(236, 236, 236);
+  padding: 7% 7% 10%;
+}
+
+.recent-sidebar h5,
+.aboutme-sidebar h5 {
+  font-weight: 700;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  letter-spacing: 0.05rem;
+  color: #143774;
+  margin: 0 0 8px;
+  font-family: Ubuntu, Arial;
+}
+
+.recent-sidebar p {
+  font-weight: 600;
+  font-size: clamp(1rem, 1.2vw, 1.2rem);
+  letter-spacing: 0.05rem;
+  color: #143774;
+  margin: 0 0 8px;
+  font-family: Lora, 'Times New Roman', Times, serif;
+}

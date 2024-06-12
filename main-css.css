@@ -1,0 +1,93 @@
+body {
+  font-size: 1rem;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.whole-div {
+  width: 92%;
+  max-width: 950px;
+  display: flex;
+  flex-direction: row;
+  margin: 3% 3% 0;
+}
+
+.home-image {
+  width: 100%;
+  height: auto;
+  max-height: 280px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.blog-div {
+  width: 77%;
+  padding-right: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.date-comment-info {
+  font-size: clamp(0.7rem, 1vw, 0.9rem);
+  color: #707070;
+}
+
+.blog-title {
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  margin: 0;
+  font-family: Lora, 'Times New Roman', Times, serif;
+}
+
+.blog-description {
+  color: #707070;
+  font-family: Ubuntu, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: clamp(1rem, 1.3vw, 1.3rem);
+  line-height: 1.5rem;
+}
+
+.blog-description span {
+  color: #707070;
+  font-family: Ubuntu, Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+.continue {
+  font-size: clamp(0.8rem, 2vw, 0.9rem);
+  color: #1792d2;
+  text-decoration: none;
+  font-family: Ubuntu, Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+}
+
+hr {
+  margin-top: 19px;
+}
+
+.submain-div {
+  margin-top: 3%;
+  display: flex;
+}
+
+.submain-image-div {
+  width: 25%;
+  margin-right: 2.5%;
+}
+
+.submain-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.submain-context {
+  width: 75%;
+}
+
+.simplicity-work-image {
+  object-position: bottom;
+}
